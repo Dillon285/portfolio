@@ -76,3 +76,25 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Gallery item click handling
+document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', function() {
+        // CUSTOMIZE: Add your image modal or navigation logic here
+        console.log('Gallery item clicked:', this.textContent);
+    });
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
