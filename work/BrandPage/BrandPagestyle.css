@@ -107,7 +107,7 @@ nav {
 
 /* Project Hero Section */
 .project-hero {
-  margin-top: 80px;
+  margin-top: 4rem;
   padding: 3rem 0;
   background: var(--gradient-explosion);
   color: var(--white);

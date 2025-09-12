@@ -20,8 +20,9 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: var(--dark-charcoal);
+    /* color: var(--white); */
     overflow-x: hidden;
+    background-color: #323232;
 }
 
 /* Smooth scrolling */
@@ -99,7 +100,7 @@ nav {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--dark-charcoal);
+    color: #FFFFFF;
 }
 
 /* Hero Section */
@@ -134,6 +135,11 @@ nav {
     margin-bottom: 2rem;
     opacity: 0;
     animation: fadeInUp 2.1s ease 0.7s forwards;
+}
+
+.cta-content {
+    display: flex;
+    gap: 1.5em;
 }
 
 .cta-button {
@@ -183,6 +189,15 @@ nav {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.section_2 {
+    padding: 5rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #f5f5f5;
 }
 
 .section h2 {
@@ -272,6 +287,7 @@ nav {
 
 .brand-content {
     padding: 2rem;
+    color: #FFFFFF;
 }
 
 .brand-content h3 {
@@ -333,7 +349,7 @@ nav {
 
 /* About Section */
 .about {
-    background: var(--light-grey);
+    background: var(--dark-charcoal);
     padding: 5rem 0;
     margin: 3rem 0;
 }
@@ -343,6 +359,7 @@ nav {
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
     align-items: center;
+    color: #FFFFFF;
 }
 
 .about-image {
@@ -358,17 +375,27 @@ nav {
     font-size: 1.2rem;
 }
 
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    color: #323232;
 }
 
 .skill-item {
     background: var(--white);
     padding: 1rem;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     box-shadow: var(--shadow-soft);
 }
@@ -387,7 +414,7 @@ nav {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: var(--dark-charcoal);
+    color: #FFFFFF;
 }
 
 .form-group input,
