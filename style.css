@@ -381,7 +381,7 @@ nav {
 .about-image {
     width: 100%;
     height: 400px;
-    background: url(./img/Qantas_240109_Grad_DillonLi_2024.jpg) center/cover no-repeat;
+    background: url('/img/Qantas_240109_Grad_DillonLi_2024.jpg') center/cover no-repeat;
     border-radius: 15px;
     /* CUSTOMIZE: Replace with your professional photo */
     display: flex;
