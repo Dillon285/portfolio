@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../WorkPagestyle.css" />
+  <title>Confirmation Page Update</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a class="logo" href="../../index.html">
+        <img src="../../img/DieNoMight_transparent.png" height="35px">
+        Dillon Li</a>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Project Hero -->
+  <section class="project-hero">
+    <div class="hero-content">
+      <div class="project-intro">
+        <h1 class="project-title">Project: Join Success Update</h1>
+        <p class="project-subtitle">
+          Translated build-ready Figma designs into a responsive, accessible web page so that new members of the Qantas
+          Frequent Flyer program were welcomed with a modern, engaging confirmation experience that encouraged them to
+          log
+          in and explore their new account
+        </p>
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">Team</span>
+          <span class="meta-value">Qantas Loyalty</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">Developer</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Tools</span>
+          <span class="meta-value">React, Typescript, Next.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIC DESIGN SECTION -->
+  <section class="project-section">
+    <div class="content-container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Key Takeaways & Learnings</h2>
+        <p class="section-subtitle">
+          Overview of the project process and outcomes - interact to learn more
+        </p>
+      </div>
+
+      <ul class="content-grid grid-2 fade-in">
+        <li><a href="#page-uplift" class="takeaway-item">
+            <h4>1. Live Confirmation Page</h4>
+            <div class="chevron-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="chevron-icon">
+                <path d="M9 18l6-6-6-6"></path>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li><a href="#date" class="takeaway-item">
+            <h4>2. Update showcase</h4>
+            <div class="chevron-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="chevron-icon">
+                <path d="M9 18l6-6-6-6"></path>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PAGE UPLIFT SECTION -->
+  <section id="page-uplift" class="project-section">
+    <div class="content-container">
+      <div class="section-header fade-in">
+        <div class="section-number">1.</div>
+        <h2 class="section-title">Live Confirmation Page</h2>
+        <p class="section-subtitle">Showcase of the developed page that is currently in prod and viewed by all Qantas
+          Frequent Flyers that join</p>
+      </div>
+
+      <!-- Preview -->
+      <div class="design-card">
+        <div class="design-card-crop">
+          <img src="./img/Confirmation.jpg" alt="Design Preview" onclick="openModal('confirmModal')"
+            style="transform: translateY(-20%);">
+          <div class="design-card-caption">Click to view full page</div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="confirmModal" class="modal">
+        <span class="close" onclick="closeModal('confirmModal')">&times;</span>
+        <div id="designSlides" class="modal-content">
+          <div class="scroll-container slide">
+            <img src="./img/Confirmation.jpg" alt="Full Page Spread">
+          </div>
+        </div>
+      </div>
+      <!-- Descriptive Elements -->
+      <div class="content-grid grid-2 fade-in">
+        <div class="content-item">
+          <h4>Engage Early</h4>
+          <p>
+            The business understood the importance of engaging new members early in their journey. Thus the confirmation
+            page was a key touchpoint to educate and excite members about the program, encouraging them to log in and
+            explore
+        </div>
+        <div class="content-item">
+          <h4>Functionality Improvements</h4>
+          <p>
+            Introduced new functionality to the confirmation page, such as a copy to clipboard button for the members
+            who wanted to saved their membership number for later use - helpful for those on a mobile
+          </p>
+        </div>
+        <div class="content-item">
+          <h4>Encourgaing login</h4>
+          <p>
+            Through the use of clear CTAs and value propositions, members were encouraged to log in and explore their
+            new
+            account. The log-in button was made prominent and the benefits of unlocking extra points was displayed
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- PROTOTYPE SECTION -->
+  <section id="search" class="project-section">
+    <div class="content-container">
+      <div class="section-header fade-in">
+        <div class="section-number">2.</div>
+        <h2 class="section-title">Update Showcase</h2>
+        <p class="section-subtitle">The deck I presented to stakeholders in the business to communicate the new update
+          and reasoning behind the udpate
+        </p>
+      </div>
+      <ul class="content-grid grid-2-2 fade-in">
+        <li><a href="./img/Confirmation_Showcase.pdf" class="takeaway-item" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px"
+              height="50px" viewBox="0 0 512 512" version="1.1" style="margin-right: 1rem;">
+              <title>pdf-document</title>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="add" fill="#FFF" transform="translate(85.333333, 42.666667)">
+                  <path
+                    d="M75.9466667,285.653333 C63.8764997,278.292415 49.6246897,275.351565 35.6266667,277.333333 L1.42108547e-14,277.333333 L1.42108547e-14,405.333333 L28.3733333,405.333333 L28.3733333,356.48 L40.5333333,356.48 C53.1304778,357.774244 65.7885986,354.68506 76.3733333,347.733333 C85.3576891,340.027178 90.3112817,328.626053 89.8133333,316.8 C90.4784904,304.790173 85.3164923,293.195531 75.9466667,285.653333 L75.9466667,285.653333 Z M53.12,332.373333 C47.7608867,334.732281 41.8687051,335.616108 36.0533333,334.933333 L27.7333333,334.933333 L27.7333333,298.666667 L36.0533333,298.666667 C42.094796,298.02451 48.1897668,299.213772 53.5466667,302.08 C58.5355805,305.554646 61.3626692,311.370371 61.0133333,317.44 C61.6596233,323.558965 58.5400493,329.460862 53.12,332.373333 L53.12,332.373333 Z M150.826667,277.333333 L115.413333,277.333333 L115.413333,405.333333 L149.333333,405.333333 C166.620091,407.02483 184.027709,403.691457 199.466667,395.733333 C216.454713,383.072462 225.530463,362.408923 223.36,341.333333 C224.631644,323.277677 218.198313,305.527884 205.653333,292.48 C190.157107,280.265923 170.395302,274.806436 150.826667,277.333333 L150.826667,277.333333 Z M178.986667,376.32 C170.098963,381.315719 159.922142,383.54422 149.76,382.72 L144.213333,382.72 L144.213333,299.946667 L149.333333,299.946667 C167.253333,299.946667 174.293333,301.653333 181.333333,308.053333 C189.877212,316.948755 194.28973,329.025119 193.493333,341.333333 C194.590843,354.653818 189.18793,367.684372 178.986667,376.32 L178.986667,376.32 Z M254.506667,405.333333 L283.306667,405.333333 L283.306667,351.786667 L341.333333,351.786667 L341.333333,329.173333 L283.306667,329.173333 L283.306667,299.946667 L341.333333,299.946667 L341.333333,277.333333 L254.506667,277.333333 L254.506667,405.333333 L254.506667,405.333333 Z M234.666667,7.10542736e-15 L9.52127266e-13,7.10542736e-15 L9.52127266e-13,234.666667 L42.6666667,234.666667 L42.6666667,192 L42.6666667,169.6 L42.6666667,42.6666667 L216.96,42.6666667 L298.666667,124.373333 L298.666667,169.6 L298.666667,192 L298.666667,234.666667 L341.333333,234.666667 L341.333333,106.666667 L234.666667,7.10542736e-15 L234.666667,7.10542736e-15 Z"
+                    id="document-pdf">
+
+                  </path>
+                </g>
+              </g>
+            </svg>
+            <h4>Presentation PDF</h4>
+            <div class="chevron-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="chevron-icon">
+                <path d="M9 18l6-6-6-6"></path>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- PROTOTYPE SECTION -->
+  <!-- <section id="search" class="project-section">
+    <div class="content-container">
+      <div class="section-header fade-in">
+        <div class="section-number">4.</div>
+        <h2 class="section-title">Interactive Prototype</h2>
+        <p class="section-subtitle">Explore how the Search and Date Range Selector filter Points Activity
+        </p>
+      </div>
+      <ul class="content-grid grid-2-2 fade-in">
+        <li><a
+            href="https://www.figma.com/proto/2ewDYnruCjanZxwRXGV4rN/Qantas-Work?page-id=1%3A307450&node-id=1-415208&viewport=-15172%2C-7632%2C0.43&t=jipm6lE0LQRG6NUt-8&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A415208&hide-ui=1"
+            class="takeaway-item" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px"
+              height="50px" viewBox="-64 0 384 384" version="1.1" preserveAspectRatio="xMidYMid"
+              style="margin-right: 1rem;">
+              <g>
+                <path
+                  d="M64,384 C99.328,384 128,355.328 128,320 L128,256 L64,256 C28.672,256 0,284.672 0,320 C0,355.328 28.672,384 64,384 Z"
+                  fill="#0ACF83">
+
+                </path>
+                <path d="M0,192 C0,156.672 28.672,128 64,128 L128,128 L128,256 L64,256 C28.672,256 0,227.328 0,192 Z"
+                  fill="#A259FF">
+
+                </path>
+                <path d="M0,64 C0,28.672 28.672,0 64,0 L128,0 L128,128 L64,128 C28.672,128 0,99.328 0,64 Z"
+                  fill="#F24E1E">
+
+                </path>
+                <path d="M128,0 L192,0 C227.328,0 256,28.672 256,64 C256,99.328 227.328,128 192,128 L128,128 L128,0 Z"
+                  fill="#FF7262">
+
+                </path>
+                <path
+                  d="M256,192 C256,227.328 227.328,256 192,256 C156.672,256 128,227.328 128,192 C128,156.672 156.672,128 192,128 C227.328,128 256,156.672 256,192 Z"
+                  fill="#1ABCFE">
+
+                </path>
+              </g>
+            </svg>
+            <h4>Figma Prototype</h4>
+            <div class="chevron-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="chevron-icon">
+                <path d="M9 18l6-6-6-6"></path>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+
+  <!-- Data Visualization -->
+  <!-- <div class="data-viz fade-in">
+        <h4>Performance Metrics</h4>
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-number">+45%</div>
+            <div class="metric-label">User Engagement</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">-30%</div>
+            <div class="metric-label">Task Completion Time</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">4.8/5</div>
+            <div class="metric-label">User Satisfaction</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">+25%</div>
+            <div class="metric-label">Conversion Rate</div>
+          </div>
+        </div>
+      </div> -->
+
+  <!-- Project Navigation -->
+  <!-- <section class="project-navigation">
+    <div class="content-container">
+      <div class="nav-grid fade-in">
+        <a href="#" class="nav-item previous">
+          <div>
+            <div class="nav-label">Previous Project</div>
+            <div class="nav-title">Project Name</div>
+          </div>
+          <span>←</span>
+        </a>
+        <a href="#" class="nav-item next">
+          <span>→</span>
+          <div>
+            <div class="nav-label">Next Project</div>
+            <div class="nav-title">Project Name</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section">
+      <h2>My Contacts</h2>
+      <article class="ux-item" aria-label="Digital contact card">
+        <div class="top">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="person">
+            <h1 class="name">Dillon Li</h1>
+            <p class="role">Product Designer & Business Analyst</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="contacts" role="list">
+            <!-- Phone -->
+            <div class="item" role="listitem">
+              <a class="link" href="tel:+61 434 193 736">
+                <!-- phone icon -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path
+                    d="M3 5.5c0-1.1.9-2 2-2h2.2c.5 0 .9.3 1 .8l.6 3c.1.4 0 .8-.3 1l-1.1 1.1c1.6 3 4.1 5.5 7.1 7.1l1.1-1.1c.2-.2.6-.4 1-.3l3 .6c.5.1.8.5.8 1V19.5c0 1.1-.9 2-2 2H19C8.9 21.5 3 15.6 3 5.5z"
+                    stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="meta">
+                  <span>+61 434 193 736</span>
+                </div>
+              </a>
+              <div class="muted">Mobile</div>
+            </div>
+
+            <!-- Email -->
+            <div class="item" role="listitem">
+              <a class="link" href="mailto:dillon285@hotmail.com">
+                <!-- mail icon -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M3 6.5v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-11c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"
+                    stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M21 6l-9 6L3 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="meta">
+                  <span>dillon285@hotmail.com</span>
+                </div>
+              </a>
+              <div class="muted">Email</div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="item" role="listitem">
+              <a class="link" href="https://www.linkedin.com/in/dillonli2000/" target="_blank"
+                rel="noopener noreferrer">
+                <!-- linkedin icon -->
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                  </path>
+                </svg>
+                <div class="meta">
+                  <span>linkedin.com/in/dillonli2000</span>
+                </div>
+              </a>
+              <div class="muted">LinkedIn</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <script src="../WorkPagescripts.js"></script>
+</body>
+
+</html>
