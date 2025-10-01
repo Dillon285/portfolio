@@ -714,7 +714,7 @@ body.modal-open {
     width: 64px;
     height: 64px;
     border-radius: 12px;
-    background: url('../../img/Qantas_240109_Grad_DillonLi_2024.jpg') center/300% no-repeat;
+    background: url('../img/Qantas_240109_Grad_DillonLi_2024.jpg') center/300% no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
