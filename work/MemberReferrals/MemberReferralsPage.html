@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="MemberReferralsPagestyle.css" />
+  <link rel="stylesheet" href="../WorkPagestyle.css" />
   <title>Member Referrals</title>
 </head>
 
@@ -12,13 +12,12 @@
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
-      <a class="logo" href="/index.html">
+      <a class="logo" href="../../index.html">
         <img src="../../img/DieNoMight_transparent.png" height="35px">
         Dillon Li</a>
       <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/index.html#about">About</a></li>
-        <li><a href="/index.html#contact">Contact</a></li>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="menu-toggle">☰</button>
     </div>
@@ -86,7 +85,7 @@
             </div>
           </a>
         </li>
-        <li><a href="#build-ready" class="takeaway-item">
+        <li><a href="#tech-feasibility" class="takeaway-item">
             <h4>3. Tech Feasibility Checks</h4>
             <div class="chevron-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -97,7 +96,7 @@
             </div>
           </a>
         </li>
-        <li><a href="#build-ready" class="takeaway-item">
+        <!-- <li><a href="#build-ready" class="takeaway-item">
             <h4>4. Leveraging existing design systems</h4>
             <div class="chevron-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -107,9 +106,9 @@
               </svg>
             </div>
           </a>
-        </li>
+        </li> -->
+      </ul>
     </div>
-    </ul>
   </section>
 
   <!-- BRAND CREATION SECTION -->
@@ -124,23 +123,23 @@
       <!-- Preview -->
       <div class="design-card">
         <div class="design-card-crop">
-          <img src="./img/DesktopXL_1440.jpg" alt="Design Preview" onclick="openModal(0)">
+          <img src="./img/DesktopXL_1440.jpg" alt="Design Preview" onclick="openModal('designModal')">
           <div class="design-card-caption">Click to view full page</div>
         </div>
       </div>
 
       <!-- Modal -->
       <div id="designModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div id="modalSlides" class="modal-content">
-          <div class="scroll-container">
+        <span class="close" onclick="closeModal('designModal')">&times;</span>
+        <div id="designSlides" class="modal-content">
+          <div class="scroll-container slide">
             <img src="./img/DesktopXL_1440.jpg" alt="Full Page Spread">
           </div>
         </div>
       </div>
       <!-- </div> -->
 
-      <!-- Brand Elements -->
+      <!-- Descriptive Elements -->
       <div class="content-grid grid-2 fade-in">
         <div class="content-item">
           <h4>Education</h4>
@@ -164,7 +163,7 @@
       </div>
   </section>
 
-  <!-- Responsive SECTION -->
+  <!-- RESPONSIVE SECTION -->
   <section id="responsive" class="project-section">
     <div class="content-container">
       <div class="section-header fade-in">
@@ -176,18 +175,18 @@
       <!-- Preview -->
       <div class="design-card">
         <div class="design-card-crop">
-          <img src="./img/Responsive.jpg" alt="Design Preview" onclick="openMultiModal(1)">
-          <div class="design-card-caption">Click to view full page</div>
+          <img src="./img/Responsive.jpg" alt="Design Preview" onclick="openModal('responsiveModal', 0)">
+          <div class="design-card-caption">Click to view the range of screen sizes</div>
         </div>
       </div>
 
       <!-- Modal -->
-      <div id="multiModal" class="modal">
-        <span class="close" onclick="closeMultiModal()">&times;</span>
+      <div id="responsiveModal" class="modal">
+        <span class="close" onclick="closeModal('responsiveModal')">&times;</span>
 
         <!-- Navigation -->
-        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
-        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+        <span class="prev" onclick="changeSlide('responsiveModal', -1)">&#10094;</span>
+        <span class="next" onclick="changeSlide('responsiveModal', 1)">&#10095;</span>
 
         <div id="modalSlides" class="modal-content">
           <div class="scroll-container slide">
@@ -210,7 +209,6 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
 
       <!-- Brand Elements -->
       <!-- <div class="content-grid grid-2 fade-in">
@@ -236,92 +234,61 @@
       </div> -->
   </section>
 
-  <!-- UX/UI DESIGN SECTION -->
-  <!-- <section class="project-section">
+  <!-- TECH FEASIBILITY SECTION -->
+  <section id="tech-feasibility" class="project-section">
     <div class="content-container">
       <div class="section-header fade-in">
-        <div class="section-number">4.</div>
-        <h2 class="section-title">UX/UI Design</h2>
-        <p class="section-subtitle">User-centered design solutions</p>
-      </div> -->
+        <div class="section-number">3.</div>
+        <h2 class="section-title">Tech Feasibility Checks</h2>
+        <p class="section-subtitle">Adapting the design based on developer feedback</p>
+      </div>
 
-      <!-- User Research -->
-      <!-- <div class="content-grid grid-2 fade-in">
-        <div class="content-item">
-          <h4>User Research</h4>
-          <p>
-            Describe your user research methodology, key insights, and how
-            they influenced your design decisions.
-          </p>
-        </div>
-        <div class="content-item">
-          <h4>Design System</h4>
-          <p>
-            Explain your design system approach, component library, and
-            consistency standards.
-          </p>
-        </div>
-      </div> -->
-
-      <!-- User Flow -->
-      <!-- <div class="process-steps fade-in">
-        <div class="process-step">
-          <div class="step-number">1</div>
-          <div class="step-title">Discovery</div>
-          <div class="step-description">User lands on homepage</div>
-        </div>
-        <div class="process-step">
-          <div class="step-number">2</div>
-          <div class="step-title">Exploration</div>
-          <div class="step-description">Browse products</div>
-        </div>
-        <div class="process-step">
-          <div class="step-number">3</div>
-          <div class="step-title">Selection</div>
-          <div class="step-description">Choose and customize</div>
-        </div>
-        <div class="process-step">
-          <div class="step-number">4</div>
-          <div class="step-title">Completion</div>
-          <div class="step-description">Checkout and confirm</div>
+      <!-- Preview -->
+      <div class="design-card">
+        <div class="design-card-crop">
+          <img src="./img/AB.png" alt="Design Preview" onclick="openModal('techModal')">
+          <div class="design-card-caption">Click to view full spread</div>
         </div>
       </div>
-    </div>
-  </section> -->
 
-  <!-- BUSINESS ANALYSIS SECTION -->
-  <!-- <section class="project-section">
-    <div class="content-container">
-      <div class="section-header fade-in">
-        <div class="section-number">5.</div>
-        <h2 class="section-title">Business Impact</h2>
-        <p class="section-subtitle">
-          Data-driven insights and strategic recommendations
-        </p>
-      </div> -->
+      <!-- Modal -->
+      <div id="techModal" class="modal">
+        <span class="close" onclick="closeModal('techModal')">&times;</span>
+        <div id="techSlides" class="modal-content">
+          <div class="scroll-container">
+            <img src="./img/AB.png" alt="Full Page Spread">
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
 
-      <!-- Stakeholder Presentations -->
-      <!-- <div class="content-grid grid-2 fade-in">
+      <!-- Descriptive Elements -->
+      <div class="content-grid grid-2 fade-in">
         <div class="content-item">
-          <h4>Executive Summary</h4>
+          <h4>Stakeholder engagement</h4>
           <p>
-            Key insights presented to senior stakeholders, including strategic
-            recommendations and implementation roadmap.
-          </p>
-          <a href="#" style="color: var(--primary-orange); text-decoration: none">View Presentation Deck →</a>
+            Liaised with developers within QBR to ensure that the design created can be coded within a feasible amount
+            of time </p>
         </div>
         <div class="content-item">
-          <h4>Analytics Dashboard</h4>
+          <h4>Back-end Considerations</h4>
           <p>
-            Comprehensive analytics setup to track key performance indicators
-            and measure initiative success.
+            Working with developers to ensure that the design can be supported by back-end systems as the fulfilment of
+            points would rest on the Loyalty part of the business
           </p>
-          <a href="#" style="color: var(--primary-orange); text-decoration: none">View Analytics Report →</a>
         </div>
-      </div> -->
+        <div class="content-item">
+          <h4>A/B versions</h4>
+          <p>
+            Two versions of the design were created to allow for flexibility - if the back-end systems were to
+            be a blocker, a leaner version of with just referral history could be considered
+          </p>
+        </div>
+      </div>
+  </section>
 
-      <!-- Data Visualization -->
-      <!-- <div class="data-viz fade-in">
+  <!-- Data Visualization -->
+  <!-- <div class="data-viz fade-in">
         <h4>Performance Metrics</h4>
         <div class="metrics-grid">
           <div class="metric-item">
@@ -342,68 +309,6 @@
           </div>
         </div>
       </div> -->
-
-      <!-- Recommendations -->
-      <!-- <div class="content-grid grid-3 fade-in">
-        <div class="content-item">
-          <h4>Short-term Actions</h4>
-          <p>
-            Immediate improvements that can be implemented within the next
-            quarter.
-          </p>
-        </div>
-        <div class="content-item">
-          <h4>Long-term Strategy</h4>
-          <p>
-            Strategic initiatives for sustained growth and user experience
-            enhancement.
-          </p>
-        </div>
-        <div class="content-item">
-          <h4>Risk Mitigation</h4>
-          <p>
-            Identified potential challenges and recommended mitigation
-            strategies.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Results Section -->
-  <!-- <section class="results-section">
-    <div class="content-container">
-      <h2 class="results-title fade-in">Project Impact</h2>
-      <div class="results-grid fade-in">
-        <div class="result-item">
-          <div class="result-number">150K+</div>
-          <div class="result-description">Users Reached</div>
-        </div>
-        <div class="result-item">
-          <div class="result-number">$2M+</div>
-          <div class="result-description">Revenue Generated</div>
-        </div>
-        <div class="result-item">
-          <div class="result-number">95%</div>
-          <div class="result-description">Client Satisfaction</div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Testimonial -->
-  <!-- <section class="project-section">
-    <div class="content-container">
-      <div class="quote-section fade-in">
-        <p class="quote-text">
-          "The attention to detail and strategic thinking brought to this
-          project exceeded our expectations. The results speak for
-          themselves."
-        </p>
-        <p class="quote-author">- Client Name, Company Position</p>
-      </div>
-    </div>
-  </section> -->
 
   <!-- Project Navigation -->
   <!-- <section class="project-navigation">
@@ -426,7 +331,113 @@
       </div>
     </div>
   </section> -->
-  <script src="./MemberReferralsPagescripts.js"></script>
+
+      <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section">
+        <h2>My Contacts</h2>
+        <article class="ux-item" aria-label="Digital contact card">
+          <div class="top">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="person">
+              <h1 class="name">Dillon Li</h1>
+              <p class="role">Product Designer & Business Analyst</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="contacts" role="list">
+              <!-- Phone -->
+              <div class="item" role="listitem">
+                <a class="link" href="tel:+61 434 193 736">
+                  <!-- phone icon -->
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 5.5c0-1.1.9-2 2-2h2.2c.5 0 .9.3 1 .8l.6 3c.1.4 0 .8-.3 1l-1.1 1.1c1.6 3 4.1 5.5 7.1 7.1l1.1-1.1c.2-.2.6-.4 1-.3l3 .6c.5.1.8.5.8 1V19.5c0 1.1-.9 2-2 2H19C8.9 21.5 3 15.6 3 5.5z"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="meta">
+                    <span>+61 434 193 736</span>
+                  </div>
+                </a>
+                <div class="muted">Mobile</div>
+              </div>
+
+              <!-- Email -->
+              <div class="item" role="listitem">
+                <a class="link" href="mailto:dillon285@hotmail.com">
+                  <!-- mail icon -->
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 6.5v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-11c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 6l-9 6L3 6"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="meta">
+                    <span>dillon285@hotmail.com</span>
+                  </div>
+                </a>
+                <div class="muted">Email</div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="item" role="listitem">
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/dillonli2000/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <!-- linkedin icon -->
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    ></path>
+                  </svg>
+                  <div class="meta">
+                    <span>linkedin.com/in/dillonli2000</span>
+                  </div>
+                </a>
+                <div class="muted">LinkedIn</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  <script src="../WorkPagescripts.js"></script>
 </body>
 
 </html>
