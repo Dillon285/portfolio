@@ -4,6 +4,7 @@ const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
 });
 
 // Smooth scrolling for navigation links
@@ -45,14 +46,6 @@ document.querySelectorAll('.fade-in').forEach(el => {
 const heroElements = document.querySelectorAll('.hero h1, .hero p, .cta-button');
 heroElements.forEach(el => {
     el.style.transform = 'translateY(30px)';
-});
-
-// CUSTOMIZE: Add your contact form handling here
-document.querySelector('.contact-form form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Add your form submission logic here
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    this.reset();
 });
 
 // Active navigation highlighting
