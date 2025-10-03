@@ -420,6 +420,15 @@ nav {
     border-radius: 10px;
     box-shadow: var(--shadow-soft);
     font-weight: bold;
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
+.skill-item:hover {
+    background: var(--dark-charcoal);
+    border-color: var(--dark-charcoal);
+    box-shadow: var(--shadow-strong);
+    transition: all 0.3s ease;
 }
 
 /* Contact Section */

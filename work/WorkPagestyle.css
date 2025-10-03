@@ -104,7 +104,15 @@ nav {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--dark-charcoal);
+  color: #ffffff;
+}
+
+.menu-toggle::before {
+    content: '☰';
+}
+
+.menu-toggle.active::before {
+    content: '✖';
 }
 
 /* Project Hero Section */
@@ -909,7 +917,7 @@ a.link {
     top: 100%;
     left: 0;
     width: 100%;
-    background: var(--white);
+    background: var(--dark-background);
     flex-direction: column;
     padding: 1rem;
     box-shadow: var(--shadow-soft);
